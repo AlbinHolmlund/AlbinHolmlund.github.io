@@ -1,0 +1,135 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,300italic,100italic,400italic);
+
+// Imports
+@import "_bootstrap-extended.scss";
+@import "_mixins.scss";
+
+// Vars
+$spacing: 20px;
+
+// Velocity
+[data-transition]{
+	visibility: hidden; // Velocity
+}
+.touch [data-transition]{
+	visibility: visible!important; // Turn off velocity
+}
+
+
+// Base
+
+*{
+	backface-visibility: hidden;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	width: 100%;
+	background: #000;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	color: #000;
+	font-size: 22px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	//font-weight: 300;
+}
+a{
+	display: inline-block;
+	color: #000 + 50;
+	&:hover, &:active, &:focus{
+		color: lighten(#000, 70);
+		text-decoration: none;
+	}
+}
+p{
+	display: inline-block; // Fix for columns
+	width: 100%; // Fix for columns
+	margin-bottom: $spacing;
+}
+p img{
+	margin: 0!important;
+}
+h1{
+	font-weight: 900;
+}
+h2, h3, h4{
+	margin: 0;
+	margin-bottom: $spacing;
+	font-weight: 900;
+}
+h2{
+	display: inline-block;
+	padding: 0 15px 15px 0;
+	border-bottom: 5px solid #000;
+}
+.tagline{
+	font-weight: 300;
+}
+
+// Helpers
+.small{
+	font-size: 0.8em;
+}
+
+
+/**** Header ****/
+header{
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	// Title container
+	.title{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		color: #fff;
+		text-align: center;
+		z-index: 1;
+		transform: translateY(-50%);
+		// Inner element
+		&-inner{
+
+		}
+	}
+}
+.header-back{
+	position: absolute;
+	height: 200%;
+	top: -50%;
+	left: 0;
+	right: 0;
+	background-image: url(img/header.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+/**** Sections ****/
+section{
+	padding: 60px 0;
+	background: #f3f3f3;
+}
+
+// Inlägg
+.entry{
+	margin-bottom: $spacing * 3;
+}
+
+/**** Footer ****/
+footer{
+	padding: 60px 0;
+	color: #fff;
+	background: #252525;
+}
+
+/**** Queries ****/
+@import "_queries.scss";

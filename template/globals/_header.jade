@@ -1,0 +1,15 @@
+
+//-data-0-top-bottom="opacity: 0;", data-top="opacity: 1;"
+//-data-100p-top-top="top: 0%;", data-0-top-bottom="top: -50%;"
+
+header(data-0-top-bottom="opacity: 0;", data-top="opacity: 1;")
+	.header-back(data-para-y="0.5")
+	.title
+		.title-inner(data-para-y="0.6", data-transition-children="h1,p;slideDownIn;1000;100")
+			h1 Albin Holmlund
+			p.tagline - Front-end Web Scientist - 
+
+
+//-ul
+	each page in pages
+		li: a(href="#{page[1]}") #{page[0]}

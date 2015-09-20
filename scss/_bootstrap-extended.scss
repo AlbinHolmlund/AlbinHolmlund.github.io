@@ -1,0 +1,270 @@
+
+
+
+/**************************************
+ ***                                ***
+ ***        Bootstrap extras        ***
+ ***                                ***
+ **************************************/
+
+/* Variables                                                    *//*
+
+        Gap for the columns                                       */
+        $p-cols-gap: 60px;                                        /*
+
+        The amount of possible paragraph column classes
+        4 = 3 classes, .col-p-2 ... .col-p-4                      */
+        $p-cols-amount: 4;                                        /*
+
+        Pull images margins                                       */
+        $pull-images-margin: 30px;                                /*
+
+        // Pull images width                                      */
+        $pull-images-width: 250px;                              /**/
+
+
+// Property removers
+.nopadding{
+    padding: 0!important;
+}
+.nomargin{
+    margin: 0!important;
+}
+
+// Vertically center columns inside this row
+.row-even{
+    display: flex;
+    align-items: center;
+}
+
+// Paragraph columns
+@for $i from 1 through $p-cols-amount{
+    .pcol-xs-#{$i}{
+        column-gap: $p-cols-gap;
+        column-count: $i; // How many columns it should have
+    }
+}
+
+// Pull images; If pulled images should float
+    // pull-left-md floats left at md and up
+    // pull-reset-md resets floats md and up
+    // pull-images class is needed to style default img elements
+$bootstrap-prefixes: xs sm md lg;
+.pull-images{
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: $pull-images-margin auto;
+    }
+    .pull-left-xs{
+        float: left;
+        margin-right: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    .pull-right-xs{
+        float: right;
+        margin-left: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    // Properties to affect all pulls at all screen sizes
+    %pull-holder{
+        text-align: right;
+    }
+    @each $prefix in $bootstrap-prefixes{
+        .pull-left-#{$prefix}, .pull-right-#{$prefix}{
+            @extend %pull-holder;
+        }
+    }
+}
+
+// Text alignment
+.text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
+    text-align: left;
+}
+.text-center-not-xs, .text-center-not-sm, .text-center-not-md, .text-center-not-lg {
+    text-align: center;
+}
+.text-right-not-xs, .text-right-not-sm, .text-right-not-md, .text-right-not-lg {
+    text-align: right;
+}
+.text-justify-not-xs, .text-justify-not-sm, .text-justify-not-md, .text-justify-not-lg {
+    text-align: justify;
+}
+.text-left-not-xs, .text-center-not-xs, .text-right-not-xs, .text-justify-not-xs {
+    text-align: inherit;
+}
+.text-left-xs {
+    text-align: left;
+}
+.text-center-xs {
+    text-align: center;
+}
+.text-right-xs {
+    text-align: right;
+}
+.text-justify-xs {
+    text-align: justify;
+}
+
+
+
+/**************************************
+ ***                                ***
+ ***    Bootstrap extras queries    ***
+ ***                                ***
+ **************************************/
+
+// Small devices (tablets, 768px and up):
+@media (min-width: 768px) {
+
+    // Paragraph columns for small
+    @for $i from 1 through $p-cols-amount{
+        .pcol-sm-#{$i}{
+            column-gap: $p-cols-gap;
+            column-count: $i; // How many columns it should have
+        }
+    }
+
+    // Pull images at
+    .pull-images .pull-left-sm{
+        float: left;
+        margin-left: 0;
+        margin-right: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    .pull-images .pull-right-sm{
+        float: right;
+        margin-right: 0;
+        margin-left: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    .pull-images .pull-reset-sm{
+        float: none;
+        margin: $pull-images-margin 0;
+        width: 100%;
+    }
+
+    // Text-alignment
+    .text-left-not-sm, .text-center-not-sm, .text-right-not-sm, .text-justify-not-sm {
+        text-align: inherit;
+    }
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+    .text-justify-sm {
+        text-align: justify;
+    }
+
+}
+
+// Medium devices (desktops, 992px and up):
+@media (min-width: 992px) {
+
+    // Paragraph columns for medium
+    @for $i from 1 through $p-cols-amount{
+        .pcol-md-#{$i}{
+            column-gap: $p-cols-gap;
+            column-count: $i; // How many columns it should have
+        }
+    }
+
+    // Pull images at
+    .pull-images .pull-left-md{
+        float: left;
+        margin-left: 0;
+        margin-right: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    .pull-images .pull-right-md{
+        float: right;
+        margin-right: 0;
+        margin-left: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    .pull-images .pull-reset-md{
+        float: none;
+        margin: $pull-images-margin 0;
+        width: 100%;
+    }
+
+    // Text alignment
+    .text-left-not-md, .text-center-not-md, .text-right-not-md, .text-justify-not-md {
+        text-align: inherit;
+    }
+    .text-left-md {
+        text-align: left;
+    }
+    .text-center-md {
+        text-align: center;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+    .text-justify-md {
+        text-align: justify;
+    }
+
+}
+@media (max-width: 992px) {
+
+    .row-even{
+        display: block;
+    }
+
+}
+
+// Large devices (large desktops, 1200px and up):
+@media (min-width: 1200px) {
+
+    // Paragraph columns for large
+    @for $i from 1 through $p-cols-amount{
+        .pcol-lg-#{$i}{
+            column-gap: $p-cols-gap;
+            column-count: $i; // How many columns it should have
+        }
+    }
+
+    // Pull images at
+    .pull-images .pull-left-lg{
+        float: left;
+        margin-left: 0;
+        margin-right: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    .pull-images .pull-right-lg{
+        float: right;
+        margin-right: 0;
+        margin-left: $pull-images-margin;
+        width: $pull-images-width;
+    }
+    .pull-images .pull-reset-lg{
+        float: none;
+        margin: $pull-images-margin 0;
+        width: 100%;
+    }
+
+    // Text alignment
+    .text-left-not-lg, .text-center-not-lg, .text-right-not-lg, .text-justify-not-lg {
+        text-align: inherit;
+    }
+    .text-left-lg {
+        text-align: left;
+    }
+    .text-center-lg {
+        text-align: center;
+    }
+    .text-right-lg {
+        text-align: right;
+    }
+    .text-justify-lg {
+        text-align: justify;
+    }
+
+}
