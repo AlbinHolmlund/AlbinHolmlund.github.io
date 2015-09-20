@@ -2,11 +2,17 @@
 //- Extend the skeleton
 extends _layout
 
+//- Set layout options
+block options
+	- var headerback = 'img/header.jpg'
+
 //- Page meat
 block body
 	section
 		.container
+			// Senaste blog-post (statisk)
+			.row(data-transition="slideUpIn"): .col-md-8.col-md-push-2
+				a.first-blog(style="background-image: url(#{blogs[0][2]});", href="#{blogs[0][1]}")= blogs[0][0]
+
 			// Om mig
 			include home-sections/_om-mig
-			// Uppgift 2
-			include home-sections/_uppgift2.jade

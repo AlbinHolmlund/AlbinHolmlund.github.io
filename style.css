@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,300italic,100italic,400italic);
 /**************************************
  ***                                ***
@@ -343,9 +344,11 @@ body {
 
 a {
   display: inline-block;
-  color: #323232; }
+  color: #323232;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000; }
   a:hover, a:active, a:focus {
-    color: #b3b3b3;
+    color: gray;
     text-decoration: none; }
 
 p {
@@ -357,6 +360,7 @@ p img {
   margin: 0 !important; }
 
 h1 {
+  display: block !important;
   font-weight: 900; }
 
 h2, h3, h4 {
@@ -370,7 +374,24 @@ h2 {
   border-bottom: 5px solid #000; }
 
 .tagline {
-  font-weight: 300; }
+  position: relative;
+  display: inline-block;
+  width: auto;
+  font-weight: 300;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff; }
+  .tagline:before, .tagline:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    border-top: 1px solid #fff; }
+  .tagline:before {
+    right: 100%;
+    margin-right: 10px; }
+  .tagline:after {
+    left: 100%;
+    margin-left: 10px; }
 
 .small {
   font-size: 0.8em; }
@@ -400,7 +421,6 @@ header {
   top: -50%;
   left: 0;
   right: 0;
-  background-image: url(img/header.jpg);
   background-position: center;
   -moz-background-size: cover;
     -o-background-size: cover;
@@ -408,11 +428,35 @@ header {
 
 /**** Sections ****/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   background: #f3f3f3; }
 
 .entry {
   margin-bottom: 60px; }
+
+.first-blog {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border: 5px solid #000;
+  background-position: center;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+       background-size: cover;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s; }
+  .first-blog:before {
+    content: 'Senaste blogginlägget: ';
+    display: block;
+    font-size: 0.8em;
+    color: #cccccc; }
+  .first-blog:hover {
+    color: #fff;
+    opacity: 0.9; }
 
 /**** Footer ****/
 footer {

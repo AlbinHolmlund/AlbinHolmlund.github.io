@@ -29,7 +29,7 @@ $(function (){
         if (!Modernizr.touch){
             $('[data-transition-children]').each(function (){
                 var params = $(this).data('transition-children');
-                params = params.split(",");
+                params = params.split(";");
 
                 $(this).find(params[0]).css('visibility', 'hidden');
             });

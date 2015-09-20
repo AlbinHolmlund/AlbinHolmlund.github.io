@@ -1,5 +1,12 @@
 doctype html
 
+//- Mixins
+include _mixins
+
+//- Blog
+- var blogs = []
+- blogs.push(['Webben om fem år.', 'webben-om-fem-ar.html', 'img/header2.jpg'])
+
 //- URL Root
 - var baseurl = '';
 
@@ -7,6 +14,9 @@ doctype html
 - var pages = []
 - pages.push(['Om mig', baseurl + '#om-mig'])
 - pages.push(['Uppgifter', baseurl + '#uppgiter'])
+
+//- Input variable options 
+block options
 
 //- HTML
 html

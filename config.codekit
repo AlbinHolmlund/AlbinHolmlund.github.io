@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/header2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.65876e+06,
+		"inputAbbreviatedPath": "\/img\/header2.jpg",
+		"outputAbbreviatedPath": "\/img\/header2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -210,6 +221,28 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/template\/_mixins.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/_mixins.jade",
+		"outputAbbreviatedPath": "\/_mixins.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/webben-om-fem-ar.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/blogs\/webben-om-fem-ar.jade",
+		"outputAbbreviatedPath": "\/webben-om-fem-ar.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/template\/globals\/_footer.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -243,17 +276,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/template\/home-sections\/_uppgift2.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/template\/home-sections\/_uppgift2.jade",
-		"outputAbbreviatedPath": "\/template\/home-sections\/_uppgift2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
 	"\/template\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -265,22 +287,11 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
-	"\/template\/test3.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/template\/test3.jade",
-		"outputAbbreviatedPath": "\/test3.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/test3.html": {
+	"\/webben-om-fem-ar.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/test3.html",
+		"inputAbbreviatedPath": "\/webben-om-fem-ar.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
