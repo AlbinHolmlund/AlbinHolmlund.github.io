@@ -6,7 +6,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 633152,
+		"initialSize": 903798,
 		"inputAbbreviatedPath": "\/img\/header.jpg",
 		"outputAbbreviatedPath": "\/img\/header.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -17,21 +17,45 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.65876e+06,
+		"initialSize": 915067,
 		"inputAbbreviatedPath": "\/img\/header2.jpg",
 		"outputAbbreviatedPath": "\/img\/header2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
+	"\/img\/hittamat\/header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 1.03375e+06,
+		"inputAbbreviatedPath": "\/img\/hittamat\/header.jpg",
+		"outputAbbreviatedPath": "\/img\/hittamat\/header.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hittamat\/hittamat_koncept.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.16744e+06,
+		"inputAbbreviatedPath": "\/img\/hittamat\/hittamat_koncept.jpg",
+		"outputAbbreviatedPath": "\/img\/hittamat\/hittamat_koncept.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hittamat\/hittamat_logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 91220,
+		"inputAbbreviatedPath": "\/img\/hittamat\/hittamat_logo.jpg",
+		"outputAbbreviatedPath": "\/img\/hittamat\/hittamat_logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/js\/assets.js": {
 		"fileType": 64,
@@ -42,7 +66,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/assets\/_modernizr.js": {
 		"fileType": 64,
@@ -53,7 +77,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/assets\/_skrollr.js": {
 		"fileType": 64,
@@ -64,7 +88,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/assets\/_waypoints.min.js": {
 		"fileType": 64,
@@ -75,7 +99,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/min\/assets-min.js": {
 		"fileType": 64,
@@ -86,7 +110,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/min\/scripts-min.js": {
 		"fileType": 64,
@@ -97,7 +121,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/scripts.js": {
 		"fileType": 64,
@@ -108,23 +132,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
-	"\/scss\/_base.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scss\/_base.scss",
-		"outputAbbreviatedPath": "\/css\/_base.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/scss\/_bootstrap-extended.scss": {
 		"createSourceMap": 0,
@@ -199,24 +207,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/template\/_bloglayout.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/template\/_bloglayout.jade",
-		"outputAbbreviatedPath": "\/template\/_bloglayout.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
 	"\/template\/_layout.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/_layout.jade",
-		"outputAbbreviatedPath": "\/template\/_layout.html",
+		"outputAbbreviatedPath": "\/Users\/albinholmlund\/Dropbox\/Utbildning\/uppgift1\/_layout.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -227,18 +224,51 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/_mixins.jade",
-		"outputAbbreviatedPath": "\/_mixins.html",
+		"outputAbbreviatedPath": "\/Users\/albinholmlund\/Dropbox\/Utbildning\/uppgift1\/_mixins.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/template\/blogs\/webben-om-fem-ar.jade": {
+	"\/template\/all-posts.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/template\/blogs\/webben-om-fem-ar.jade",
-		"outputAbbreviatedPath": "\/webben-om-fem-ar.html",
+		"inputAbbreviatedPath": "\/template\/all-posts.jade",
+		"outputAbbreviatedPath": "\/all-posts.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/1-webben-om-fem-ar.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/blogs\/1-webben-om-fem-ar.jade",
+		"outputAbbreviatedPath": "\/1-webben-om-fem-ar.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/2-hittamat.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/blogs\/2-hittamat.jade",
+		"outputAbbreviatedPath": "\/2-hittamat.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/_bloglayout.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/blogs\/_bloglayout.jade",
+		"outputAbbreviatedPath": "\/Users\/albinholmlund\/Dropbox\/Utbildning\/uppgift1\/_bloglayout.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -249,7 +279,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/globals\/_footer.jade",
-		"outputAbbreviatedPath": "\/template\/globals\/_footer.html",
+		"outputAbbreviatedPath": "\/Users\/albinholmlund\/Dropbox\/Utbildning\/uppgift1\/_footer.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -260,18 +290,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/globals\/_header.jade",
-		"outputAbbreviatedPath": "\/template\/globals\/_header.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/template\/home-sections\/_om-mig.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/template\/home-sections\/_om-mig.jade",
-		"outputAbbreviatedPath": "\/template\/home-sections\/_om-mig.html",
+		"outputAbbreviatedPath": "\/Users\/albinholmlund\/Dropbox\/Utbildning\/uppgift1\/_header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -295,13 +314,13 @@
 	"\/js\/assets.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/assets\/_skrollr.js",
+			"linkedFileAbbreviatedPath": "\/js\/assets\/_modernizr.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/assets\/_modernizr.js",
+			"linkedFileAbbreviatedPath": "\/js\/assets\/_skrollr.js",
 			"position": 1,
 			"type": 0
 			},
@@ -315,9 +334,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "uppgift1_hemsidan",
+	"displayValue": "albinholmlund.io",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "globe_gray"
+	"iconImageName": "pencil_yellow"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
@@ -494,7 +513,7 @@
 	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
-	"javascriptSyntaxCheckerStyle": 0,
+	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {

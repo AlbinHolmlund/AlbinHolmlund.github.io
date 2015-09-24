@@ -1,0 +1,31 @@
+
+//- Extend the skeleton
+extends _bloglayout
+
+block options
+	- var headerback = blogs['hittamat']['image']
+	- var title = blogs['hittamat']['title']
+	- var date = blogs['hittamat']['date']
+
+	- var prev = blogs['webb-om-fem']
+
+block content
+	p.
+		#[a(href="http://www.recepten.se/") Recepten.se], 
+		#[a(href="http://receptfavoriter.se/") Receptfavoriter.se], 
+		#[a(href="http://www.recept.nu/") Recept.nu]
+	p: i.
+		Uppgift fyra på kursen gick ut på att vi först skulle analysera tre hemsidor
+		och sedan skapa en egen tjänst i samma tema.
+		#[br]
+		#[strong Här är den hemsidan som jag designade.]
+	
+	h3 Logo
+	p
+		a(href="img/hittamat/hittamat_logo.jpg")
+			img.img-responsive(style="width: 400px;", src="img/hittamat/hittamat_logo.jpg", alt="Hittamat Logo")
+	
+	h3 Hemsidan
+	p
+		a(href="img/hittamat/hittamat_koncept.jpg")
+			img.img-responsive(src="img/hittamat/hittamat_koncept.jpg", alt="Hittamat Koncept")

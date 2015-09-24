@@ -47,6 +47,7 @@ a{
 	color: #000 + 50;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #000;
+	transition: color 0.3s;
 	&:hover, &:active, &:focus{
 		color: lighten(#000, 50);
 		text-decoration: none;
@@ -63,16 +64,31 @@ p img{
 h1{
 	display: block!important; // Sorry, had to override the transition children inline block
 	font-weight: 900;
+	a{
+		color: #fff;
+		transition: all 0.3s;
+		&:hover{
+			color: #fff;
+			opacity: 0.9;
+		}
+	}
 }
 h2, h3, h4{
 	margin: 0;
 	margin-bottom: $spacing;
 	font-weight: 900;
 }
-h2{
+h2, h3{
 	display: inline-block;
+}
+h2{
 	padding: 0 15px 15px 0;
 	border-bottom: 5px solid #000;
+}
+h3{
+	font-weight: 400;
+	padding: 0 10px 10px 0;
+	border-bottom: 3px solid #000;
 }
 .tagline{
 	position: relative;
@@ -155,12 +171,31 @@ section{
 	background-size: cover;
 	color: #fff;
 	transition: all 0.3s;
-	&:before{
-		content: 'Senaste blogginlägget: ';
+	.blog-pretext{
 		display: block;
 		font-size: 0.8em;
 		color: darken(#fff, 20);
 	}
+	&:hover{
+		color: #fff;
+		opacity: 0.9;
+	}
+}
+.blogs{
+	@extend .first-blog;
+	margin-bottom: 10px;
+}
+
+/**** Buttons ****/
+.button{
+	background: #000;
+	padding: 10px 20px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #fff;
+	border-radius: 20px;
+	margin: 0 10px 5px 0;
+	transition: opacity 0.3s;
 	&:hover{
 		color: #fff;
 		opacity: 0.9;

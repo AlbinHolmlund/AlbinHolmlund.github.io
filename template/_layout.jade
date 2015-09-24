@@ -4,8 +4,10 @@ doctype html
 include _mixins
 
 //- Blog
-- var blogs = []
-- blogs.push(['Webben om fem år.', 'webben-om-fem-ar.html', 'img/header2.jpg'])
+- var blogFirst = {title: 'Hittamat.nu - Designkoncept', url: '2-hittamat.html', image: 'img/hittamat/header.jpg', date: '24/9 - 2015'}
+- var blogs = {}
+- blogs['hittamat'] = {title: 'Hittamat.nu - Designkoncept', url: '2-hittamat.html', image: 'img/hittamat/header.jpg', date: '24/9 - 2015'}
+- blogs['webb-om-fem'] = {title: 'Webben om fem år', url: '1-webben-om-fem-ar.html', image: 'img/header2.jpg', date: '20/9 - 2015'}
 
 //- URL Root
 - var baseurl = '';
