@@ -1,0 +1,14 @@
+
+//- Extend the skeleton
+extends _bloglayout
+
+block options
+	- var headerback = blogs['b1']['image']
+	- var title = blogs['b1']['title']
+	- var date = blogs['b1']['date']
+
+	- var prev = blogs['yrkesrollen']
+
+block content
+	:markdown
+		[Uppgift B1 HTML](./uppgifter/b1/index.html "Uppgift B1 HTML")

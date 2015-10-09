@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Albin Holmlund</title>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js" type="text/javascript"></script>
+    <script src="js/min/assets-min.js" type="text/javascript"></script>
+    <script src="js/min/scripts-min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header data-0-top-bottom="opacity: 0;" data-top="opacity: 1;">
+      <div style="background-image: url(img/yrkesrollen/header.jpg);" data-para-y="0.5" class="header-back"></div>
+      <div class="title">
+        <div data-para-y="0.6" data-transition-children="h1,p;slideDownIn;1000;100" class="title-inner">
+          <h1><a href="index.html">Albin Holmlund</a></h1>
+          <p class="tagline">Front-end Web Scientist</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div data-transition="slideUpBigIn" class="row entry">
+          <div class="col-md-8 col-md-push-2">
+            <h2>Yrkesrollen - Front-end utvecklare</h2>
+            <p data-transition-children="a;slideUpIn;1000;100"><a href="2-hittamat.html" class="button"><i class="fa fa-angle-double-left"></i> Hittamat.nu - Designkoncept</a><a href="all-posts.html" class="button">Alla blogginlägg</a><a href="4-b1.html" class="button">Uppgift B_1 HTML - Äppelkaka <i class="fa fa-angle-double-right"></i></a>
+            </p><p><strong>Som front-endutvecklare så är din uppgift att utveckla användargränssnittet</strong>, det som användaren interagerar vid, till skillnad från back-endprogrammering som sköter de mer dolda funktionerna, så som databashantering.</p>
+
+<p><em>En front-endutvecklare jobbar med html, css och javascript. Html är strukturen, css är designlagret, och javascript är till för att till exempel lägga till/ändra och förflytta saker i html. </em></p>
+
+<p>Som front-endutvecklare har du tre huvudsakliga mål med hemsidan du utvecklar. Det första är <strong><em>tillgänglighet</em></strong>, som går ut på att hemsidan ska fungera så bra som möjligt på alla olika webbläsare och smartphones, den ska helt enkelt vara tillgänglig på så många ställen som möjligt. Det andra målet är <strong><em>användbarhet</em></strong>; viktiga saker på hemsidan ska vara tydliga och lättåtkomliga, det ska vara lätt att använda hemsidan. Det sista är <strong><em>prestanda</em></strong>, hemsidan ska ladda snabbt så att användaren inte klickar bort innan hen hinner se innehållet.</p>
+
+<h3>Tekniker</h3>
+
+<p>Det finns många tekniker för att uppnå respektive mål. För att öka hemsidans tillgänglighet så kan man använda javascript-filer för att till exempel meddela om problem med användarens webbläsarversion. Ett sådant javascript-verktyg är <a href="https://modernizr.com/" title="Modernizr">modernizr</a>, som lägger till klasser i html-taggen om webbläsaren inte stödjer vissa funktioner som till exempel transforms, eller om användaren använder en touch-device. Då kan man sedan utnyttja att klassen finns i html-taggen genom att använda den som första selectorn i css:en, för att designa om ett element så att det passar den ej kompatibla webbläsaren. </p>
+
+<p><code>Exempel: .no-transform .box{ ...css... };</code> </p>
+
+<p>Detta kommer då endast att visas på det sättet om taggen <strong>.no-transform</strong> är närvarande i html:en, vilket endast sker om funktionen saknas.  För att få ett någorlunda bra webbläsarstöd i äldre versioner av <a href="./img/ie.jpg" title="Please don&#39;t.">Internet Explorer</a> kan man också använda <a href="https://github.com/afarkas/html5shiv" title="HTML5 Shiv">html5shiv.js</a> och <a href="https://code.google.com/p/css3-mediaqueries-js/" title="CSS3 Media Queries JS">css3-mediaqueries.js</a> som då simulerar html5/css3 i en gammal webbläsare.</p>
+
+<p><strong>Ett knep</strong> för att öka hemsidans användbarhet är att försöka hålla hemsidans innehåll så kort och koncist som möjligt. Webben har gjort så att användaren med åren har fått en sämre och sämre koncentrationsförmåga. Detta leder då till att vi ofta bara skannar texten efter viktiga nyckelord för att validera texten innan vi börjar läsa den. Därför är det bra att dela upp texten till stycken med undertitlar för att ge användaren en bättre förståelse för vad det är den ska läsa. </p>
+
+<p>För att öka din hemsidas prestanda så finns det massor optimeringar man kan göra. Det vanligaste är att man minifierar koden innan den laddas upp på en server, detta minskar filstorleken och då även filens nedladdningstid. Men jag skulle ändå säga att det viktigaste är att man helt enkelt skriver riktigt smart/effektiv och kortfattad kod. Det sparar mer tid än dom millisekunderna som en minifiering sparar.</p>
+
+<p>När man jobbar med css så finns det även där många bra verktyg. Några sådana är <a href="http://code.tutsplus.com/tutorials/sass-vs-less-vs-stylus-preprocessor-shootout--net-24320" title="Preprocessor Shootout">Sass, Less och Stylus</a> som är preprocessorer som i stort sett förvandlar den limiterade naturen av css till ett fullfjädrat programmeringsspråk där man har funktioner (mixins), variabler och nesting. Preprocessorer kompilerar sedan din kod till läsbar css, ungefär som c++ kompilerar användarvänlig kod till mindre användarvänlig maskinkod. Det finns även <a href="http://usablica.github.io/front-end-frameworks/compare.html" title="Lista med CSS-frameworks">frameworks</a> som endast är färdig css-kod som kan användas och byggas ut för att passa dina hemsidebehov.</p>
+
+<p>Sist men inte minst så har vi javascript som verkligen har tagit över marknaden de senaste åren. Nu används det i stort sett överallt. Främst pågrund av olika javascriptbibliotek som <a href="http://mootools.net/" title="Mootools">Mootools</a>, <a href="http://prototypejs.org/" title="PrototypeJS">Prototype</a> och <a href="https://jquery.com/" title="jQuery">jQuery</a>. jQuery är det mest använda av dessa och många anser att det är pågrund av det som javascript har blivit ett relativt lättlärt språk då jQuery simplifierar dom-manipulation och animering en hel del.</p>
+
+<h3>Intervju</h3>
+
+<p>Jag valde att intervjua Olof Svanberg från <a href="http://socialwebgroup.se/" title="Social Web Group">Social Web Group</a>. Social Web Group vann 2014 priset Årets Företagare med motivationen att de på kort tid har etablerat sig i området och har snabbt fått uppdrag hos ett flertal större företag och föreningar. Olof vann samma år Årets Affärskreatör där tio unga entreprenörer tävlade om en studieplats vid Handelshögskolan i Stockholm. Social Web Group har gjort uppdrag åt stora kunder så som Atlas Copco och Svenskt Näringsliv.</p>
+
+<p>Olof säger att Social Web Group främst säljer tjänster i form av utvecklingstimmar och konsultation. Dom erbjuder även support. I nuläget jobbar Social Web Group med ett stort nätverk av utvecklare. Dom som mer seniora företagare tar in jobb från företag och sedan leder projekten. Social Web Group är mycket för att stödja nyblivna webbutvecklare och ungdomar genom att ge dom en chans att frilansa som underleverantör. Utvecklarna har då även stort inflytande över arbetsgången och projektens upplägg.</p>
+
+<p>Olof började vid 15 års ålder med webbutveckling under skoltiden. Det blev snabbt ett intresse och sedan en passion. Det första projektet han deltog i var en Wordpress hemsida åt ett mindre företag i Örebro. Till den använde han mest html och php. </p>
+
+<p>Jag frågade honom hur han tror att framtiden ser ut för denna bransch. Han sade att framtiden ser mycket god ut. Det har dock blivit lättare för personer samt företag att köpa färdiga generiska hemsidor, vilket ställer högre krav på oss seriösa webbyråer. Det behövs även mer kvinnor i vår bransch, något som vi alla måste försöka främja för utvecklingen av vår bransch. </p>
+
+<p>Olof säger att förutom kodspråken samt design-känsla så behöver man en passion för det man gör för att bli en framgångsrik webbutvecklare. </p>
+
+<p>Jag frågade slutligen Olof om det är något annat man bör veta innan man ger sig in i detta yrke. Det är viktigt att hitta dina språk som passar dig bäst och bli riktigt bra på dom, att lära sig allt direkt är ett slöseri med tid och energi. Var inte rädd för att göra både back-end och front-end!</p>
+
+<h3>Källor</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Front_end_development" title="Wikipedia: Front End Developement">Wikipedia: Front End Developement</a></p>
+
+<p><a href="http://mashable.com/2011/09/12/website-usability-tips/#vLmp3heyqqqb" title="Mashable: Website Usability Tips">Mashable: Website Usability Tips</a></p>
+            <p><i class="small">Publicerad: 9/10 - 2015</i></p>
+            <!-- Läs mer, nästa blogg--><a style="background-image: url(img/b1/header.jpg);" href="4-b1.html" class="blogs"><span class="blog-pretext">Nästa blogginlägg: </span>Uppgift B_1 HTML - Äppelkaka</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2 text-center text-right-md">
+            <p class="small">Av Albin Holmlund</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-60725809-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

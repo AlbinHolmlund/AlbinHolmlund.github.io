@@ -412,9 +412,6 @@ h3 {
     left: 100%;
     margin-left: 10px; }
 
-.small {
-  font-size: 0.8em; }
-
 /**** Header ****/
 header {
   position: relative;
@@ -504,7 +501,16 @@ footer {
   color: #fff;
   background: #252525; }
 
+.small {
+  font-size: 0.8em; }
+
+.margin-bottom {
+  margin-bottom: 30px; }
+
 /**** Queries ****/
 @media (max-width: 768px) {
+  body {
+    font-size: 18px; }
+
   section {
     padding: 20px 0; } }

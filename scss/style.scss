@@ -114,11 +114,6 @@ h3{
 	}
 }
 
-// Helpers
-.small{
-	font-size: 0.8em;
-}
-
 
 /**** Header ****/
 header{
@@ -207,6 +202,15 @@ footer{
 	padding: 60px 0;
 	color: #fff;
 	background: #252525;
+}
+
+
+// Helpers
+.small{
+	font-size: 0.8em;
+}
+.margin-bottom{
+	margin-bottom: $spacing + 10px;
 }
 
 /**** Queries ****/

@@ -6,6 +6,9 @@ $smallPad: 20px;
 }
 
 @media (max-width: 768px) {
+	body{
+		font-size: 18px;
+	}
 	section{
 		padding: $smallPad 0;
 	}
