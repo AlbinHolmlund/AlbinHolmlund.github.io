@@ -55,7 +55,21 @@ html
 				
 		//- Scripts
 		script(src="js/min/scripts-min.js", type="text/javascript")
-			
+
+		//- Hightlight JS for code snippets
+		link(rel="stylesheet", href="./highlight/tomorrow-night.css")
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js")
+		script.
+			$(document).ready(function() {
+			  $('pre code').each(function(i, block) {
+				hljs.configure({
+					tabReplace: '    ',
+					classPrefix: ''     // don't append class prefix
+				                      // … other options aren't changed
+				})
+			    hljs.highlightBlock(block);
+			  });
+			});
 
 	//- Body
 	body

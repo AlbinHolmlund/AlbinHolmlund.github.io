@@ -13,6 +13,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js" type="text/javascript"></script>
     <script src="js/min/assets-min.js" type="text/javascript"></script>
     <script src="js/min/scripts-min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./highlight/tomorrow-night.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+      	hljs.configure({
+      		tabReplace: '    ',
+      		classPrefix: ''     // don't append class prefix
+      	                      // … other options aren't changed
+      	})
+          hljs.highlightBlock(block);
+        });
+      });
+      
+    </script>
   </head>
   <body>
     <header data-0-top-bottom="opacity: 0;" data-top="opacity: 1;">
@@ -39,10 +54,18 @@
 <h3>Tekniker</h3>
 
 <p>Det finns många tekniker för att uppnå respektive mål. För att öka hemsidans tillgänglighet så kan man använda javascript-filer för att till exempel meddela om problem med användarens webbläsarversion. Ett sådant javascript-verktyg är <a href="https://modernizr.com/" title="Modernizr">modernizr</a>, som lägger till klasser i html-taggen om webbläsaren inte stödjer vissa funktioner som till exempel transforms, eller om användaren använder en touch-device. Då kan man sedan utnyttja att klassen finns i html-taggen genom att använda den som första selectorn i css:en, för att designa om ett element så att det passar den ej kompatibla webbläsaren. </p>
+            <pre><code class="css tommorrow">/* Exempel */
 
-<p><code>Exempel: .no-transform .box{ ...css... };</code> </p>
+/* Positionerad med CSS3 transform. */
+.box {
+	transform: translateY(20px);
+}
 
-<p>Detta kommer då endast att visas på det sättet om taggen <strong>.no-transform</strong> är närvarande i html:en, vilket endast sker om funktionen saknas.  För att få ett någorlunda bra webbläsarstöd i äldre versioner av <a href="./img/ie.jpg" title="Please don&#39;t.">Internet Explorer</a> kan man också använda <a href="https://github.com/afarkas/html5shiv" title="HTML5 Shiv">html5shiv.js</a> och <a href="https://code.google.com/p/css3-mediaqueries-js/" title="CSS3 Media Queries JS">css3-mediaqueries.js</a> som då simulerar html5/css3 i en gammal webbläsare.</p>
+/* Ersättning om webbläsaren inte har transform. */
+.no-transform .box {
+	top: 20px;
+};
+</code></pre><p>Detta kommer då endast att visas på det sättet om taggen <strong>.no-transform</strong> är närvarande i html:en, vilket endast sker om funktionen saknas.  För att få ett någorlunda bra webbläsarstöd i äldre versioner av <a href="./img/ie.jpg" title="Please don&#39;t.">Internet Explorer</a> kan man också använda <a href="https://github.com/afarkas/html5shiv" title="HTML5 Shiv">html5shiv.js</a> och <a href="https://code.google.com/p/css3-mediaqueries-js/" title="CSS3 Media Queries JS">css3-mediaqueries.js</a> som då simulerar html5/css3 i en gammal webbläsare.</p>
 
 <p><strong>Ett knep</strong> för att öka hemsidans användbarhet är att försöka hålla hemsidans innehåll så kort och koncist som möjligt. Webben har gjort så att användaren med åren har fått en sämre och sämre koncentrationsförmåga. Detta leder då till att vi ofta bara skannar texten efter viktiga nyckelord för att validera texten innan vi börjar läsa den. Därför är det bra att dela upp texten till stycken med undertitlar för att ge användaren en bättre förståelse för vad det är den ska läsa. </p>
 
