@@ -22,18 +22,20 @@ block content
 		Det finns många tekniker för att uppnå respektive mål. För att öka hemsidans tillgänglighet så kan man använda javascript-filer för att till exempel meddela om problem med användarens webbläsarversion. Ett sådant javascript-verktyg är [modernizr](https://modernizr.com/ "Modernizr"), som lägger till klasser i html-taggen om webbläsaren inte stödjer vissa funktioner som till exempel transforms, eller om användaren använder en touch-device. Då kan man sedan utnyttja att klassen finns i html-taggen genom att använda den som första selectorn i css:en, för att designa om ett element så att det passar den ej kompatibla webbläsaren. 
 
 	//- Code snippets
-	pre: code.css.
-		/* Exempel */
+	.code
+		pre: code.css.
+			/* Exempel */
 
-		/* Positionerad med CSS3 transform. */
-		.box {
-			transform: translateY(20px);
-		}
-		
-		/* Ersättning om webbläsaren inte har transform. */
-		.no-transform .box {
-			top: 20px;
-		};
+			/* Positionerad med CSS3 transform. */
+			.box {
+				transform: translateY(20px);
+			}
+			
+			/* Ersättning om webbläsaren inte har transform. */
+			.no-transform .box {
+				top: 20px;
+			};
+		.code-tag CSS
 
 	:markdown
 		Detta kommer då endast att visas på det sättet om taggen **.no-transform** är närvarande i html:en, vilket endast sker om funktionen saknas.  För att få ett någorlunda bra webbläsarstöd i äldre versioner av [Internet Explorer](./img/ie.jpg "Please don't.") kan man också använda [html5shiv.js](https://github.com/afarkas/html5shiv "HTML5 Shiv") och [css3-mediaqueries.js](https://code.google.com/p/css3-mediaqueries-js/ "CSS3 Media Queries JS") som då simulerar html5/css3 i en gammal webbläsare.

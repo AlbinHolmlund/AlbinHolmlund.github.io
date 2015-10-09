@@ -412,6 +412,25 @@ h3 {
     left: 100%;
     margin-left: 10px; }
 
+/**** Code ****/
+pre {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.code {
+  position: relative; }
+  .code-tag {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #fff;
+    background: #404549;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    font-size: 0.7em;
+    padding: 0.5em 1em; }
+
 /**** Header ****/
 header {
   position: relative;
