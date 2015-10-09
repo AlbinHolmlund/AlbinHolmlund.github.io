@@ -4,36 +4,13 @@ extends _layout
 
 //- Set layout options
 block options
-	- var headerback = 'img/header2.jpg'
+	- var headerback = 'img/header.jpg'
 
 //- Page meat
 block body
 
 	section
 		.container
-			.row(data-transition="slideUpIn"): .col-md-8.col-md-push-2
-				h2 Alla blogginlägg
-
-				div
-					a.button.margin-bottom(href="https://github.com/AlbinHolmlund", target="_blank") Github #[i.fa.fa-angle-double-right]
-					a.button.margin-bottom(href="om-mig.html") Om mig #[i.fa.fa-angle-double-right]
-
-				each blog in blogs
-						a.blogs(style="background-image: url(#{blog['image']});", href="#{blog['url']}")
-							span.blog-pretext= blog['date']
-							| #{blog['title']}
-
-	//-section
-		.container
-			// Senaste blog-post (statisk)
-			.row(data-transition="slideUpIn"): .col-md-8.col-md-push-2
-				a.first-blog(style="background-image: url(#{blogFirst['image']});", href="#{blogFirst['url']}")
-					span.blog-pretext Senaste blogginlägget: 
-					| #{blogFirst['title']}
-
-				a.button.margin-bottom(href="https://github.com/AlbinHolmlund", target="_blank") Github #[i.fa.fa-angle-double-right]
-				a.button.margin-bottom(href="all-posts.html") Alla blogginlägg #[i.fa.fa-angle-double-right]
-
 			// Om mig
 			.row(data-transition="slideUpBigIn"): .col-md-8.col-md-push-2
 				:markdown
