@@ -22,39 +22,3 @@ block body
 						a.blogs(style="background-image: url(#{blog['image']});", href="#{blog['url']}")
 							span.blog-pretext= blog['date']
 							| #{blog['title']}
-
-	//-section
-		.container
-			// Senaste blog-post (statisk)
-			.row(data-transition="slideUpIn"): .col-md-8.col-md-push-2
-				a.first-blog(style="background-image: url(#{blogFirst['image']});", href="#{blogFirst['url']}")
-					span.blog-pretext Senaste blogginlägget: 
-					| #{blogFirst['title']}
-
-				a.button.margin-bottom(href="https://github.com/AlbinHolmlund", target="_blank") Github #[i.fa.fa-angle-double-right]
-				a.button.margin-bottom(href="all-posts.html") Alla blogginlägg #[i.fa.fa-angle-double-right]
-
-			// Om mig
-			.row(data-transition="slideUpBigIn"): .col-md-8.col-md-push-2
-				:markdown
-					##Om mig
-
-					**Note:** *Mina uppgifter kommer lite senare då jag fick sen antagning.*
-
-					**Jag har alltid velat bli programmerare.** När jag var liten ville jag bli spelprogrammerare och började med simpla programmeringsspråk som Visual Basic och Game Maker redan innan jag kunde läsa. 
-
-					För ungefär 3.5 år sedan så insåg jag att det var webbdesigner jag ville bli. Sedan dess har jag lärt mig mycket. Det är front-end och UI/UX design som jag anser mig ha bäst kunskaper inom. Jag kan rätt så mycket PHP och databasprogrammering också, men det är inget jag finner något speciellt nöje i. 
-
-					Kort efter att jag hade börjat med webbdesign så sökte jag frilansjobb hos en firma i Örebro/Stockholm. I samma veva lärde jag mig också att skapa Wordpress-mallar och på den vägen är det.
-
-					De senaste tre åren har jag studerat en del men även gjort rätt så mycket frilans under tiden. Drömmen är att kunna livnära mig på att göra det jag tycker är roligast; att skapa hemsidor.
-
-					Jag kan redan en del javascript men känner att jag vill gå en utbildning inom yrket ändå för att få lite mer att stå på när jag ska söka jobb senare alternativt bygga upp mitt företag under tiden.
-
-					På fritiden så brukar jag festa, spela trummor eller studera olika vetenskapsområden och webbdesign.
-
-					Det finns två saker inom front-end design som jag rekommenderar alla att lära sig om ni redan kan CSS och HTML. Det är SCSS och Jade tillsammans med Codekit. Det har gjort mitt liv hundra gånger lättare.
-
-					Vill ni veta något om hur man skapar en simpel eller avancerad hemsidedesign så kan ni fråga mig, och om jag inte kan svaret så kan jag det senast imorgon :)
-				
-				+date("19/9 - 2015")

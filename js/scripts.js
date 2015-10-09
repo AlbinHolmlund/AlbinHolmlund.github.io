@@ -8,6 +8,7 @@ $(function (){
         var s = skrollr.init({forceHeight: false});
 
         // Scroll parallax
+        // Todo: Kan göras med Skrollr.js istället då det redan finns i projektet.
         $(document).scroll(function (){
             var scrollTop = $(window).scrollTop();
 
