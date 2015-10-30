@@ -367,6 +367,7 @@ h1 {
   font-weight: 900; }
   h1 a {
     color: #fff;
+    border: 0;
     -webkit-transition: all 0.3s;
        -moz-transition: all 0.3s;
          -o-transition: all 0.3s;

@@ -1,0 +1,24 @@
+
+//- Extend the skeleton
+extends _bloglayout
+
+block options
+	- var headerback = blogs['b2']['image']
+	- var title = blogs['b2']['title']
+	- var date = blogs['b2']['date']
+
+	- var prev = blogs['b1']
+
+block content
+	:markdown
+		[Uppgift B2 CSS - Zen Garden](./uppgifter/b2/index.html "Uppgift B2 CSS - Zen Garden")
+
+		**_Jag valde att göra en rätt så stilren design_** *med inte så många färger för att göra innehållet lättläsligt.*
+		*Jag gjorde även texten `18px` stor för att förtydliga den, och eftersom att jag är ett stort fan av animationer så 
+		försökte jag även få in någon typ av intro-animation det med `CSS3 keyframes`.*
+
+
+	h3 Design mockup
+	p
+		a(href="img/b2/B_2_skiss.jpg")
+			img.img-responsive(src="img/b2/B_2_skiss.jpg", alt="Zen Garden Mockup")

@@ -69,6 +69,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/b2\/B_2_skiss.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.78736e+06,
+		"inputAbbreviatedPath": "\/img\/b2\/B_2_skiss.jpg",
+		"outputAbbreviatedPath": "\/img\/b2\/B_2_skiss.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/b2\/header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 691822,
+		"inputAbbreviatedPath": "\/img\/b2\/header.jpg",
+		"outputAbbreviatedPath": "\/img\/b2\/header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/header.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -376,6 +398,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/blogs\/4-b1.jade",
 		"outputAbbreviatedPath": "\/4-b1.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/5-b2.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/blogs\/5-b2.jade",
+		"outputAbbreviatedPath": "\/5-b2.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
