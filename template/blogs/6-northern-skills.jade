@@ -1,0 +1,83 @@
+
+//- Extend the skeleton
+extends _bloglayout
+
+block options
+	- var headerback = blogs['northern']['image']
+	- var title = blogs['northern']['title']
+	- var date = blogs['northern']['date']
+
+	- var prev = blogs['b2']
+
+block content
+
+	:markdown
+		[Northern Skills](http://northernskills.se/ "Northern Skills")
+
+		*Även fast jag har kodat många hemsidor tidigare så måste jag säga 
+		att den här uppgiften har varit väldigt lärorik. 
+		Jag har bland annat lärt mig hur det kan fungera att jobba i grupp på ett projekt, 
+		använda github i praktiken och hantera git via terminalen.*
+
+		**Vi började med** att brainstorma idéer på företagsnamn, 
+		vad vi skulle erbjuda för tjänster och vilken målgrupp vi skulle rikta in oss på. 
+		Alla fick bidra med namnförslag och till slut bestämde vi oss för att köra en kombination av två förslag, 
+		det blev ”Northern Skills”. 
+		Vi bestämde oss också för att vår målgrupp skulle vara mindre företag.
+
+		Vi valde att göra varsin branch i projektets repository som vi sedan kunde 
+		skapa en pull request från för att pusha in vår ändringar till master. 
+		Ett annat alternativ hade varit att skapa varsin fork och därifrån skapa en pull request, 
+		men vi valde att göra så här och ge alla möjlighet att redigera varandras branches om så skulle behövas. 
+		För att hantera de olika delarna som behövde åtgärdas för att färdigställa hemsidan så använde vi Trello.
+
+		Det skedde också skypemöten med jämna mellanrum där vi kunde komma överens om vad som skulle göras 
+		och ge feedback på varandras delar av hemsidan. 
+		Vid dessa tillfällen kunde vi också ta hjälp av varandra och ge förslag på förbättringar.
+
+		**För att sätta igång projektet** på ett bra sätt så började vi med att skapa en grundstruktur 
+		på hemsidan och html-filerna där vi hade de olika sektionernas positioner utplacerade med hjälp av kommentarer, 
+		på så sätt gjorde vi det tydligt var den delen vi jobbade med skulle vara placerad och minskade då en riskfaktor; 
+		merge-conflicts, då ingen skriver på exakt samma ställe. 
+
+		Min del var först att göra en portfolio-sektion som ett rutnät där vi 
+		kan ha olika projekt som företaget har gjort. 
+		En av dom mest utmanande sakerna med den här uppgiften var faktiskt att göra det jag anser mig vara bäst på, 
+		skriva CSS. Jag är så van vid att skriva SCSS så vanlig CSS kändes som att gå tillbaka till stenåldern. 
+
+		För att göra min portfolio-sektion använde jag flexbox, 
+		vilket gjorde så att jag kunde lätt ge alla kolumnerna samma höjd. 
+		När vi sedan skulle göra om hemsidan med ett ramverk (i vårt fall bootstrap 4) 
+		så ville jag använda bootstraps col-klasser för att skapa layouten. 
+		Problemet var då att få alla kolumnerna i samma höjd. 
+		Jag kunde ha ändrat CSS:en för de col/row på min sektion till flexbox, 
+		men detta hade då motverkat själva tanken att använda bootstrap istället för egen custom CSS. 
+		Jag valde därför att istället korrigera kolumnernas höjder med jQuery.
+
+	//- Code snippets
+	.code
+		pre: code.js.
+			// Bootstrap columns same height
+			$(document).ready(function() {
+				var $items = $('.item-inner'), // Items
+					heights; // Heights array
+
+				// Store all item heights
+				heights = $items.map(function() {
+			        return $(this).height();
+			    }).get(),
+
+				// Get max height of all the items
+			    maxHeight = Math.max.apply(null, heights);
+
+			    // Apply new height to the items
+			    $items.height(maxHeight);
+			});
+		.code-tag Javascript
+
+	:markdown
+		Min slutsats med denna del är att jag nog hade använt custom CSS och skippat 
+		bootstrap helt för denna sektion om jag hade fått välja mellan de två alternativen. 
+		Bootstrap är bra för mycket, men detta är ett undantag.
+
+		**Slutligen så vill jag säga** att samarbetet i gruppen fungerade bra och det märktes att alla var engagerade i att lära sig nya saker och utveckla sin kunskap. Det är något jag själv har funnit väldigt givande då jag tycker att det är väldigt kul att dela med mig av det jag vet och även ta del av andras tankar och idéer.

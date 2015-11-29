@@ -38,6 +38,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/5-b2.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/5-b2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/6-northern-skills.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/6-northern-skills.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/highlight\/highlight.pack.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -153,6 +171,17 @@
 		"initialSize": 58820,
 		"inputAbbreviatedPath": "\/img\/ie.jpg",
 		"outputAbbreviatedPath": "\/img\/ie.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/northern\/header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 752489,
+		"inputAbbreviatedPath": "\/img\/northern\/header.jpg",
+		"outputAbbreviatedPath": "\/img\/northern\/header.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -409,6 +438,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/blogs\/5-b2.jade",
 		"outputAbbreviatedPath": "\/5-b2.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/6-northern-skills.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/blogs\/6-northern-skills.jade",
+		"outputAbbreviatedPath": "\/6-northern-skills.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
