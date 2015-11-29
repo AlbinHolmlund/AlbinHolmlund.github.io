@@ -342,17 +342,22 @@ body {
   letter-spacing: 0.05em; }
 
 a {
-  position: relative;
   display: inline-block;
   color: #323232;
   padding-bottom: 5px;
-  padding-right: 1.5em;
   border-bottom: 1px solid #000;
   -webkit-transition: color 0.3s;
      -moz-transition: color 0.3s;
        -o-transition: color 0.3s;
           transition: color 0.3s; }
-  a:after {
+  a:hover, a:active, a:focus {
+    color: gray;
+    text-decoration: none; }
+
+.arrow-link {
+  position: relative;
+  padding-right: 1.5em; }
+  .arrow-link:after {
     content: '\f3d6';
     font-family: Ionicons;
     position: absolute;
@@ -360,9 +365,6 @@ a {
     right: 0;
     margin-top: -0.75em;
     font-size: 1.5em; }
-  a:hover, a:active, a:focus {
-    color: gray;
-    text-decoration: none; }
 
 p {
   display: inline-block;
