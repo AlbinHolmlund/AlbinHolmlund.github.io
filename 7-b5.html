@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Albin Holmlund</title>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js" type="text/javascript"></script>
+    <script src="js/min/assets-min.js" type="text/javascript"></script>
+    <script src="js/min/scripts-min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./highlight/styles/obsidian.css">
+    <script src="./highlight/highlight.pack.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+      	hljs.configure({
+      		tabReplace: '    ',
+      		//classPrefix: ''     // don't append class prefix
+      	                      // … other options aren't changed
+      	})
+          hljs.highlightBlock(block);
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <header data-0-top-bottom="opacity: 0;" data-top="opacity: 1;">
+      <div style="background-image: url(img/b5/header.jpg);" data-para-y="0.5" class="header-back"></div>
+      <div class="title">
+        <div data-para-y="0.6" data-transition-children="h1,p;slideDownIn;1000;100" class="title-inner">
+          <h1><a href="index.html">Albin Holmlund</a></h1>
+          <p class="tagline">Front-end Web Scientist</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div data-transition="slideUpBigIn" class="row entry">
+          <div class="col-md-8 col-md-push-2">
+            <h2>Uppgift B_5 - Solsystemet</h2>
+            <p data-transition-children="a;slideUpIn;1000;100"><a href="6-northern-skills.html" class="button"><i class="fa fa-angle-double-left"></i> Uppgift 3/4 - Northern Skills</a><a href="index.html" class="button">Alla blogginlägg</a>
+            </p>
+            <p><a href="http://albinholmlund.github.io/SolarSystem/" alt="_SolarSystem" class="arrow-link">Se projektet</a><br><a href="https://github.com/AlbinHolmlund/SolarSystem" alt="_SolarSystem Github" class="arrow-link">Projektets github</a></p><p><em><strong>Jag har försökt anpassa projektet till alla skärmstorlekar, men på grund av tidsbrist så har jag inte hunnit riktigt få i ordning på mobilanpassningen ännu. Så försök inte köra den på någon touch device, använd en dator i nuläget.</strong></em></p>
+
+<p><em>Denna uppgift gick ut på att skapa en infographic. Jag valde att skapa vårt solsystem med info om alla planeterna.</em></p>
+
+<p><strong>Detta blogginlägg kommer att vara uppdelat i två delar.</strong></p>
+
+<ul><li><strong>Del 1:</strong> <em>Designen</em>; Denna del visar hur jag kom på designen, det som uppgiften kräver.</li><li><strong>Del 2:</strong> <em>Koden</em>; Del två kommer att gå mer in depth om hur jag åstadkom effekterna och den mer avancerade koden på det här projektet.</li></ul>
+
+<p><em>Del 2 kommer upp inom de närmsta dagarna.</em></p>
+
+<h3>Resultatet</h3>
+            <div class="video-container"><iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/6xIRT0huiuA" frameborder="0" allowfullscreen></iframe></div><h3>Del 1: Designen</h3>
+
+<p><strong>Det började med att jag fick en idé;</strong> att jag skulle skapa vårt solsystem i javascript med planeterna i vektor (SVG) för att hålla bildkvalitén så crisp som möjligt.</p>
+
+<p>Det första jag gjorde var att leta efter en gratis resource av SVG-planeter som jag kunde använda då jag själv inte är någon mästare när det kommer till att rita saker i vektorgrafik.</p>
+
+<p><em>Jag hittade dessa planeter:</em></p>
+            <p><img src="img/b5/planets.jpg" alt="Planeterna i SVG" class="img-responsive"></p><p><strong>Källa:</strong> <a href="http://www.mygraphichunt.com/free-vector-flat-planet-vectors-10713/" title="Flat planet vectors">Flat planet vectors</a></p>
+
+<p><strong>Nästa del var att</strong> jag skulle få tag på någon bra rymdbakgrund att ha till planeterna, då slog det mig att jag hade sett en grym rymd-canvas-animation för några månader sedan. Jag lyckades till slut hitta den canvas-animationen jag sökte!</p>
+
+<p><strong>Rymd-canvas-animation:</strong> <a href="http://codepen.io/frexuz/pen/BvHsk" title="Rymd canvas via codepen">http://codepen.io/frexuz/pen/BvHsk</a></p>
+
+<p>Jag gjorde ingen direkt mockup på hur projektet skulle se ut då det här var ett väldigt experimentellt projekt och jag ville testa mig fram till den perfekta lösningen.</p>
+
+<p>Det började väldigt simpelt, men blev snabbt mer och mer avancerat, med fler och fler funktioner och resultatet blev långt över min förväntan! Jag trodde inte att det skulle bli så pass bra som det blev. Alla bitar bara fall på plats och det känns som att många av idéerna till hur jag skulle lösa de olika delarna av kodandet kom rent naturligt.</p>
+
+<p>Det jag är mest stolt över med projektet är hur alla animationer sker.</p>
+
+<p>Jag kommer att gå in mer på detaljer över hur det animeras i del två av blogginlägget som kommer att läggas upp inom några dagar.</p>
+
+<h3>Koden</h3>
+
+<p><em>Koden fär att göra denna typ av animation kommer att diskuteras i blogginlägget Del 2.</em></p>
+
+<p><strong>Grundtanken med animationen är</strong> att istället för att göra som t.ex. <code>jQuery</code> gör; ta <code>animations-målet</code> minus <code>startvärdet</code> och dela på <code>steg</code> som det skall ta att slutföra animationen och addera en del av det värdet varje frame tills animationen är klar, så sker denna typ av animation på ett mycket mer dynamiskt sätt.</p>
+
+<p><code>jQuery</code> gör (ungefär) såhär: </p>
+            <div class="code">
+              <pre><code class="js">/*
+	a = startvärdet
+	b = målet
+	steps = så många gånger som värdet kommer att plussas innan animationen är över
+*/
+
+increment = (b – a) / steps;
+
+// Varje step så ökas värdet såhär
+a += increment</code></pre>
+              <div class="code-tag">Matematik</div>
+            </div><p><em>Jag gör istället såhär:</em></p>
+            <div class="code">
+              <pre><code class="js">/*
+	a = nuvarande värdet
+	b = värdet som a rör sig emot
+	divider = hur mycket värdet ska delas på innan det adderas, ju mer divider är, desto segare kommer animationen att gå emot sitt nya värde.
+*/
+
+// Vi förbestämmer inte hur mycket som ska ökas, utan vi ökar istället alltid en del av det som är kvar
+
+// Varje step så ökas värdet såhär
+a += (b - a) / divider</code></pre>
+              <div class="code-tag">Matematik     </div>
+            </div><p>Genom att göra så, kan vi köra vår formell 60 gånger per sekund och <code>a</code>-värdet kommer hela tiden att röra sig emot <code>b</code>.</p>
+
+<p>Vi kan ändra <code>b</code> när som helst och <code>a</code> kommer börja röra sig emot det nya <code>b</code> istället utan att det laggar till i animationen.</p>
+
+<p>Detta kan vara ett rätt så svårt koncept att förstå sig på, men det skapar mycket mer dynamiska oförbestämda animationer.</p>
+
+<p><em><strong>Slutligen så måste jag säga att det här är helt klart det mest givande projektet jag har gjort.</strong></em></p>
+            <p><i class="small">Publicerad: 4/12 - 2015</i></p>
+            <!-- Läs mer, nästa blogg-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2 text-center text-right-md">
+            <p class="small">Av Albin Holmlund</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-60725809-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

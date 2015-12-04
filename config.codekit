@@ -47,6 +47,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/6-northern-skills.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/6-northern-skills.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/7-b5.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/7-b5.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/highlight\/highlight.pack.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -96,6 +114,28 @@
 		"initialSize": 691822,
 		"inputAbbreviatedPath": "\/img\/b2\/header.jpg",
 		"outputAbbreviatedPath": "\/img\/b2\/header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/b5\/header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 812549,
+		"inputAbbreviatedPath": "\/img\/b5\/header.jpg",
+		"outputAbbreviatedPath": "\/img\/b5\/header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/b5\/planets.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33606e+06,
+		"inputAbbreviatedPath": "\/img\/b5\/planets.jpg",
+		"outputAbbreviatedPath": "\/img\/b5\/planets.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -440,6 +480,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/blogs\/6-northern-skills.jade",
 		"outputAbbreviatedPath": "\/6-northern-skills.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/7-b5.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/template\/blogs\/7-b5.jade",
+		"outputAbbreviatedPath": "\/7-b5.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
