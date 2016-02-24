@@ -1,0 +1,48 @@
+
+//- Extend the skeleton
+extends _bloglayout
+
+block options
+	- var headerback = blogs['c2']['image']
+	- var title = blogs['c2']['title']
+	- var date = blogs['c2']['date']
+
+	- var prev = blogs['todolist']
+
+block content
+	p
+		a.arrow-link(href="http://albinholmlund.github.io/HangMan/", alt="HangMan") Se projektet
+		br
+		a.arrow-link(href="https://github.com/AlbinHolmlund/HangMan", alt="HangMan Github") Projektets github
+
+	:markdown
+		**När jag fick veta att vi skulle göra ett spel så var min första idé att skapa någon typ av multiplayer spel med hjälp av firebase och mitt animationscript,** *men efter att ha lekt runt lite med den idéen så fastnade jag och visste inte riktigt hur jag skulle gå vidare med idéen, så jag beslutade mig för att gå med det gamla hederliga spelet; hänga gubbe.*
+
+	:markdown
+		### Processen
+
+		#### Inspiration
+
+		Det började egentligen med att jag sökte på Google efter ”Hänga gubbe” och fann den här bilden.
+
+	p
+		img.fullwidth.img-responsive(src="img/c2/hangman.gif", alt="HangMan Inspiration")
+
+	:markdown
+		Och jag blev direkt mycket inspirerad till att göra ett hänga gubbe med en lite kreativare designstil kontra den vanliga varianten; hänga sträck-gubbe.
+
+		#### Mockup
+
+		Jag började som alltid med att leka runt i photoshop tills jag kom fram till något jag gillade. Den slutgiltiga designen som jag utgick ifrån blev så här.
+
+	p
+		img.fullwidth.img-responsive(src="img/c2/mockup.jpg", alt="HangMan Mockup")
+
+	:markdown
+		#### Kodning
+
+		Även på denna uppgift så använde jag som tidigare mitt animationscript som jag vid något tillfälle ska göra ett blogginlägg om. Förutom det så använde jag endast egen kod undantaget jQuery.
+
+		#### Framtida förändringar
+
+		I framtiden skulle jag vilja lägga till flera ord. Det är även en del små buggar jag har hittat som irriterar mig lite, dessa ska jag nog åtgärda vid något tillfälle. Jag skulle också vilja att varje kroppsdel var lite genomskinlig och när man skriver fel bokstav så ska en del i taget få full opacitet och på så sett likna den normala varianten av hänga gubbe lite mer.

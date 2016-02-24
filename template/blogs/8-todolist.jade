@@ -1,0 +1,40 @@
+
+//- Extend the skeleton
+extends _bloglayout
+
+block options
+	- var headerback = blogs['todolist']['image']
+	- var title = blogs['todolist']['title']
+	- var date = blogs['todolist']['date']
+
+	- var prev = blogs['b5']
+	- var next = blogs['c2']
+
+block content
+	p
+		a.arrow-link(href="http://albinholmlund.github.io/todolist/", alt="Todolist") Se projektet
+		br
+		a.arrow-link(href="https://github.com/AlbinHolmlund/todolist", alt="Todolist Github") Projektets github
+
+	:markdown
+		**Den här uppgiften gick ut på att skapa en todo-app med HTML/CSS och Javascript.**
+
+		*Jag valde att gå en lite annorlunda väg med designen på min app och inte använda några knappar. Precis som mina tidigare projekt så valde jag att utnyttja mycket animationer för att förflytta/lägga till list-objekt.*
+
+		### Resultatet
+
+	.video-container
+		<iframe class="youtube" width="420" height="315" src="https://www.youtube.com/embed/dsId0PC5dKo" frameborder="0" allowfullscreen></iframe>
+
+	:markdown
+		**Min idé var** att man först klickar en gång för att stryka över ett objekt, sedan en gång till för att flytta objektet till den andra listan och en tredje gång för att ta bort objektet helt och hållet. För att ångra den föregående åtgärden så högerklickar man.
+
+		### Feedback
+
+		Jag bad en kompis om feedback och en sak som det direkt anmärktes på var att det inte var så uppenbart hur man använder appen, jag hade helt enkelt missat att lägga in en info-ruta om hur appens kontroller fungerar. 
+
+		En annan sak som jag fick feedback på precis efter att jag hade börjat skriva på det här blogginlägget var att det var svårt att ändra ett objekt då det tidigare på appen gjordes genom att dubbelklicka på objektet. För att lösa dubbelklick funktionen så hade jag satt en timeout så att om man klickade på objektet två gånger inom 300ms så ändrade man texten, om man bara klickade en gång inom 300ms så strök man istället över objektet. Detta var ingen bra lösning då detta innebar att sidan verkade oresponsiv eller seg eftersom att den inte reagerade direkt när man klickade. För att lösa detta så gjorde jag istället om det så att man ändrar ett objekt genom att klicka på en editknapp bredvid objektets text.
+
+		### Förbättringar
+
+		**Om jag skulle vidareutveckla denna app** så skulle jag gör så att man kunde markera och ta bort flera objekt på en gång då det nu kan vara rätt så besvärligt om man har typ 15 objekt och vill ta bort alla på en gång. Förutom det så är jag rätt så nöjd med appen.
