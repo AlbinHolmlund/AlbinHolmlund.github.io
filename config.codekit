@@ -110,6 +110,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/c3\/header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 360826,
+		"inputAbbreviatedPath": "\/img\/c3\/header.jpg",
+		"outputAbbreviatedPath": "\/img\/c3\/header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/header.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -531,6 +542,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/template\/blogs\/1-webben-om-fem-ar.jade",
 		"outputAbbreviatedPath": "\/1-webben-om-fem-ar.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/template\/blogs\/10-c3.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template\/blogs\/10-c3.jade",
+		"outputAbbreviatedPath": "\/10-c3.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0

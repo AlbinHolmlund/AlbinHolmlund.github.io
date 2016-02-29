@@ -1,0 +1,37 @@
+
+//- Extend the skeleton
+extends _bloglayout
+
+block options
+	- var headerback = blogs['c3']['image']
+	- var title = blogs['c3']['title']
+	- var date = blogs['c3']['date']
+
+	- var prev = blogs['c2']
+
+block content
+	p
+		a.arrow-link(href="http://albinholmlund.github.io/ApiApp/", alt="Youtube API App") Se projektet
+		br
+		a.arrow-link(href="https://github.com/AlbinHolmlund/ApiApp", alt="Youtube API App Github") Projektets github
+
+	:markdown
+		**Mitt mål med den här uppgiften** var att skapa en annorlunda variant av Youtubes UI där allting skulle ske via en single-page application; jag ville att det skulle kännas mer som en webb-upplevelse än bara en hemsida.
+
+		En sak jag har lagt märke till på Youtube är att jag ofta skrollar ner och läser kommentarerna samtidigt som jag kollar på videon, vilket resulterar i att jag kanske missar något intressant. Detta löste jag genom att köra en [Twitch](http://www.twitch.tv/ "Twitch.tv")-liknande UI där kommentarerna ligger till höger om videon och beskrivningen under.
+
+
+	:markdown
+		### Resultat
+		**Video-kvalitén** blev väldigt låg denna gång. Animationerna på den här sidan är rätt så krävande och dom laggade en del när jag spelade in på högsta kvalitén. Det går i alla fall att se hur den är tänkt att användas...
+
+
+	.video-container
+		<iframe class="youtube" width="420" height="315" src="https://www.youtube.com/embed/ov8pFjdRkSg" frameborder="0" allowfullscreen></iframe>
+	
+	:markdown
+		### Förbättringar
+		1. Jag skulle verkligen vilja lägga till olika filtrerings-/sorteringsfunktioner som flest gillningar, datum och relevans.
+		2. Lägga till inloggningsfunktion så att användaren kan kommentera via appen och även gilla/ogilla o.s.v.
+		3. Visa videor från endast en kanal och inte bara visa videor via sökning.
+		4. *I stort sett vilken som helst av funktionerna som finns på vanliga Youtube skulle vara intressant att implementera.*
